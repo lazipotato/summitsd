@@ -194,7 +194,7 @@ table {
     margin-left: 5%;
     margin-right: 5%;
     text-align: left;
-    width: 90%;
+    max-width: 90%;
     color: grey;
 }
 
