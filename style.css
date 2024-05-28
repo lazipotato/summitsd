@@ -24,16 +24,8 @@
 
 .logo {
     padding: 0;
-    padding-left: 3%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 1.7rem;
-    color:black;
-    text-decoration: none;
-    font-weight: 700;
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    padding-left: 2%;
+    padding-top: 0.5%;
 }
 
 nav {
@@ -280,4 +272,28 @@ svg {
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+.bottom {
+    width: 100%;
+    background-color: black;
+    color: antiquewhite;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.us {
+    margin-left: 5%;
+    width: 75%;
+    display: inline-block;
+}
+
+.ourLogo {
+    width: 200px;
+    display: inline-block;
+    align-items: end;
+}
+
+.bottom h3 {
+    font-size: 2rem;
 }
