@@ -107,7 +107,7 @@ a {
 
 h1 {
     margin-left: 10%;
-    font-size: 480%;
+    font-size: 520%;
     color: antiquewhite;
 }
 
@@ -193,8 +193,8 @@ h2 {
 table {
     margin-left: 5%;
     margin-right: 5%;
-    text-align: left;
     max-width: 90%;
+    text-align: left;
     color: grey;
 }
 
@@ -285,11 +285,12 @@ svg {
 
 .us {
     margin-left: 5%;
-    width: 75%;
+    width: 70%;
     display: inline-block;
 }
 
 .ourLogo {
+    margin-left: 5%;
     width: 200px;
     display: inline-block;
     align-items: end;
@@ -297,4 +298,5 @@ svg {
 
 .bottom h3 {
     font-size: 2rem;
+    padding-bottom: 2%;
 }
