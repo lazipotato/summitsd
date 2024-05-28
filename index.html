@@ -15,45 +15,236 @@
         rel = "stylesheet"
         href = "./style.css"
     />
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    >
+    <link 
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Danfo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+        rel="stylesheet"
+    >
 </head>
 <body>
+    <div class = "sidebar">
+        <nav class = "navbarbar">
+            <a onclick = closeSidebar(); class = "transition-all closebtn"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -1060 960 960" width="26px" fill="#faebd7"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <div class = "break"></div>
+            <a onclick = closeSidebar(); class = "transition-all bottom-line" href = "#">Home</a>
+            <div class = "break"></div>
+            <a onclick = closeSidebar(); class = "transition-all bottom-line" href = "#about">About</a>
+            <div class = "break"></div>
+            <a onclick = closeSidebar(); class = "transition-all bottom-line" href = "#instructors">Instructors</a>
+            <div class = "break"></div>
+            <a onclick = closeSidebar(); class = "transition-all bottom-line" href = "#curriculum">Curriculum</a>
+            <div class = "break"></div>
+            <a onclick = closeSidebar(); class = "transition-all bottom-line" href = "#faq">FAQ</a>
+        </nav>
+    </div>
         <div class = "navbar">
-            <a href = "./index.html" class = "logo" style = "color: antiquewhite">Summit</a>
+            <a href = "#" class = "logo" style = "color: antiquewhite">Summit</a>
             <nav class = "navbarbar">
-                <a href = "#">About</a>
-                <a href = "#">Schedule</a>
-                <a href = "#">Instructors</a>
-                <a href = "#">FAQ</a>
+                <a class = "transition-all hideOnMobile bottom-line" href = "#about">About</a>
+                <a class = "transition-all hideOnMobile bottom-line" href = "#instructors">Instructors</a>
+                <a class = "transition-all hideOnMobile bottom-line" href = "#curriculum">Curriculum</a>
+                <a class = "transition-all hideOnMobile bottom-line" href = "#faq">FAQ</a>
+                <a onclick=showSidebar(); class = "transition-all btn"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#faebd7"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
             </nav>
-            <div class = "toggle_btn">
-                <i class="fa-solid fa-bars"></i>
+        </div>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function closeSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+    <section class = "parallax">
+        <div class = "parallax-inner">
+            <h1 style = "padding-top: 9%;">Summit</h1>
+            <h2>speech and debate</h2>
+            <br>
+            <br>
+            <br>
+            <a href="#about" class = "learn-more" style = "transition: 2s;">Learn more</a>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <div class = "margin">
+        <hr>
+        <div id = "about">
+            <br>
+            <br>
+            <h2 style = "color:rgb(24, 41, 69);">About us</h2>
+            <br>
+            <p>Our speech and debate camp will be geared towards students in 3rd to 7th grade.</p>
+            <p>Each student will learn skills in public speaking, critical thinking, and research.</p>
+            <p>Each session will be one hour, with optional office hours after, and will occur three times a week: Monday, Wednesday, and Friday. This camp will run from July 1st to 26th. Depending on the availability of the kids, camp sessions will either be in the morning (10:30 AM - 11:30 AM) or in the afternoon (4:30 PM - 5:30 PM). Optional office hours can be scheduled by the parent or kid and will take place for thirty minutes after the camp session. </p>
+            <p>In order to ensure the commitment of the students, we are charging a $40.00 fee. If the student is present at every class (running from July 1st to July 26th), this fee will be refunded. Parents must notify coaches ahead of time for exceptions.</p>
+            <br>
+            <br>
+        </div>
+        <div id = "instructors">
+            <br>
+            <br>
+            <h2 style = "color: antiquewhite">Instructors</h2>
+            <br>
+            <p>This camp will be led by Deepika Sujay and Hannah Ying, two passionate high schoolers with 6 years of combined speech and debate experience. Having competed at both middle school and high school levels, we are eager to share their knowledge and enthusiasm with the next generation of leaders. Join us for an exciting opportunity to explore the world of speech and debate!</p>
+            <p>[insert photos]</p>
+            <br>
+            <br>
+        </div>
+        <div id = curriculum>
+            <br>
+            <br>
+            <h2 style = "color:rgb(24, 41, 69)">Curriculum</h2>
+            <br>
+            <table>
+                <tr>
+                    <th>Week</th>
+                    <th>Day</th>
+                    <th>Session Focus</th>
+                </tr>
+                <tr>
+                    <td>one: Platform and Interp</td>
+                    <td>monday</td>
+                    <td>Meet instructors and students, play games, intro to interp (speech acting), use of voice/gestures, student script presentations with feedback
+                    </td>
+                </tr>
+                <tr>
+                    <td>one</td>
+                    <td>wednesday</td>
+                    <td>Intro to platform speeches, vocal exercises, icebreakers, watch champion clips, work on speech about favorite movie, Q&A session.</td>
+                </tr>
+                <tr>
+                    <td>one</td>
+                    <td>Friday</td>
+                    <td>Focus on delivery improvement, fun games, vocal exercises, speech writing, 3-5 minute speech performances with peer feedback.</td>
+                </tr>
+                <tr>
+                    <td>two: Spontaneous</td>
+                    <td>monday</td>
+                    <td>Intro to spontaneous speeches, quick-thinking games, bonding activities, collaborative spontaneous speech performance.</td>
+                </tr>
+                <tr>
+                    <td>two</td>
+                    <td>Wednesday</td>
+                    <td>Start giving speeches on the spot with minimal prep time, game to improve speaking skills.</td>
+                </tr>
+                <tr>
+                    <td>two</td>
+                    <td>Friday</td>
+                    <td>Structured speeches, 2 minute speeches with 5 minutes prep time, option to challenge themselves further.</td>
+                </tr>
+                <tr>
+                    <td>three: Debate</td>
+                    <td>Monday</td>
+                    <td> Introduction to debating, topic introduction, brainstorming arguments.</td>
+                </tr>
+                <tr>
+                    <td>three</td>
+                    <td>Wednesday</td>
+                    <td>Debate terminologies, successful debate examples (actors, lawyers, presidents), fundamentals of debate, intro to SPAR (spontaneous argumentation), prepare arguments for practice debate.</td>
+                </tr>
+                <tr>
+                    <td>three</td>
+                    <td>Friday</td>
+                    <td>Practice debates, preparation for internal tournament.</td>
+                </tr>
+                <tr>
+                    <td>four: Internal Tournament</td>
+                    <td>Monday</td>
+                    <td>Showcase skills in a fun competition, decide event for competition, end with fun exercise.</td>
+                </tr>
+                <tr>
+                    <td>four</td>
+                    <td>Wednesday</td>
+                    <td>Speech competition day, compete with own script or speech on societal issue, rankings disclosed, certificates for all</td>
+                </tr>
+                <tr>
+                    <td>four</td>
+                    <td>Wednesday</td>
+                    <td>Speech competition day, compete with own script or speech on societal issue, rankings disclosed, certificates for all</td>
+                </tr>
+                <tr>
+                    <td>four</td>
+                    <td>Friday</td>
+                    <td>Debate tournament, compete against each other, certificate distribution.</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+        </div>
+        <div id = "faq">
+            <br>
+            <br>
+            <h2 style = "color: antiquewhite">FAQ</h2>
+            <br>
+            <section class = "questions">
+                <div class = "faqfaq">
+                <div class = "q">
+                    <h3>What if I don't have experience?</h3>
+                    <svg width = "15" height = "10" viewBox = "0 0 42 25">
+                        <path d = "M3 3L21 21L39 3" stroke = "white" stroke-width = "7"
+                        stroke-linecap = "round"/>
+                    </svg>
+                </div>
+                <div class = "answer">
+                    <p>That's completely fine! This camp is totally beginner friendly.</p>
+                </div>
             </div>
+            <div class = "faqfaq">
+                <div class = "q">
+                    <h3>blah?</h3>
+                    <svg width = "15" height = "10" viewBox = "0 0 42 25">
+                        <path d = "M3 3L21 21L39 3" stroke = "white" stroke-width = "7"
+                        stroke-linecap = "round"/>
+                    </svg>
+                </div>
+                <div class = "answer">
+                    <p>blah.</p>
+                </div>
+            </div>
+            <div class = "faqfaq">
+                <div class = "q">
+                    <h3>blah?</h3>
+                    <svg width = "15" height = "10" viewBox = "0 0 42 25">
+                        <path d = "M3 3L21 21L39 3" stroke = "white" stroke-width = "7"
+                        stroke-linecap = "round"/>
+                    </svg>
+                </div>
+                <div class = "answer">
+                    <p>blah.</p>
+                </div>
+            </div>
+            <div class = "faqfaq">
+                <div class = "q">
+                    <h3>blah?</h3>
+                    <svg width = "15" height = "10" viewBox = "0 0 42 25">
+                        <path d = "M3 3L21 21L39 3" stroke = "white" stroke-width = "7"
+                        stroke-linecap = "round"/>
+                    </svg>
+                </div>
+                <div class = "answer">
+                    <p>blah.</p>
+                </div>
+            </div>
+            </section>
+            <br>
+            <br>
         </div>
-        <div class="dropdown_menu">
-            <a href = "#">About</a>
-            <a href = "#">Schedule</a>
-            <a href = "#">Instructors</a>
-            <a href = "#">FAQ</a>
-        </div>
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
-    </script>
-
-    <h1 style = "padding-top: 10%;">Summit</h1>
-    <h2 style="text-align: center; font-size: 3rem;">speech and debate</h2>
-    <br>
-    <h2>Who We Are</h2>
-
+    </div>
+    <script src = "./app.js"></script>
 </body>
 </html>
